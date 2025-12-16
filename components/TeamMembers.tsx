@@ -68,10 +68,17 @@ function TeamMemberCard({ member }: TeamMemberCardProps) {
   )
 }
 
+// components/TeamMembers.tsx (Refactored)
+
+// Assuming TEAM_MEMBERS and TeamMemberCard are defined/imported elsewhere
+
 export default function TeamMembers() {
   return (
-    <div className=" bg-linear-to-br from-slate-900 to-indigo-950 py-8 px-4 mt-28 sm:px-6 lg:px-8 ">
-      <div className="max-w-7xl mx-auto">
+    // FIX 1: Removed the explicit background gradient (bg-linear-to-br...).
+    // The background is now inherited (transparent) from the parent <Hero /> wrapper.
+    // FIX 2: Kept the vertical padding (py-8) and top margin (mt-28) for spacing.
+    <div className="py-8 px-4 mt-28 sm:px-6 lg:px-8 ">
+      <div className="max-w-7xl mx-auto opacity-90">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-extrabold text-white sm:text-4xl">
             Meet Our Team
@@ -81,6 +88,7 @@ export default function TeamMembers() {
           </p>
         </div>
 
+        {/* Note: The grid container ALSO has a background. We need to check this as well. */}
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4  group relative bg-linear-to-br from-purple-900/40 to-purple-950/40 rounded-3xl p-8 border border-purple-800/30 hover:border-purple-600/50 ">
           {TEAM_MEMBERS.map(member => (
             <TeamMemberCard key={member.id} member={member} />
@@ -90,3 +98,25 @@ export default function TeamMembers() {
     </div>
   )
 }
+// export default function TeamMembers() {
+//   return (
+//     <div className=" bg-linear-to-br from-slate-900 to-indigo-950 py-8 px-4 mt-28 sm:px-6 lg:px-8 ">
+//       <div className="max-w-7xl mx-auto opacity-90">
+//         <div className="text-center mb-8">
+//           <h1 className="text-3xl font-extrabold text-white sm:text-4xl">
+//             Meet Our Team
+//           </h1>
+//           <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4 ">
+//             Talented people building great things.
+//           </p>
+//         </div>
+
+//         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4  group relative bg-linear-to-br from-purple-900/40 to-purple-950/40 rounded-3xl p-8 border border-purple-800/30 hover:border-purple-600/50 ">
+//           {TEAM_MEMBERS.map(member => (
+//             <TeamMemberCard key={member.id} member={member} />
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   )
+// }

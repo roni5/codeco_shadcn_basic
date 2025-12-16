@@ -16,6 +16,7 @@ import {
   EyeOff,
   Phone,
 } from 'lucide-react'
+import AnimatedImageColumns from '@/components/AnimatedImageColumns'
 
 export default function Component() {
   const [showCurrentPassword, setShowCurrentPassword] = useState(false)
@@ -44,6 +45,7 @@ export default function Component() {
       {/* Main Content */}
       <div className="relative z-10 flex items-center justify-center min-h-screen p-8">
         <div className="flex gap-6 w-full max-w-6xl">
+          <AnimatedImageColumns />
           {/* Left Sidebar */}
           <div className="w-80">
             <div className="backdrop-blur-xl bg-white/10 rounded-3xl p-6 border border-white/20">

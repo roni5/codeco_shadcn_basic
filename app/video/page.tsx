@@ -187,7 +187,7 @@ const Navigation = () => {
     </nav>
   )
 }
-
+/* Video Player Component  src="video/phone-light.mp4"  */
 const VideoPlayer = () => {
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
