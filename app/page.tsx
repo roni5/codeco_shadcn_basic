@@ -57,7 +57,7 @@ export default function HomePage() {
                       backgroundSize: '300% 100%',
                       animation: 'rotate-border 4s linear infinite',
                     }}
-                  ></div>
+                  />
                   <div className="relative rounded-3xl overflow-hidden">
                     <Image
                       src="/img/working-on-laptops.jpeg"

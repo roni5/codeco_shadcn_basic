@@ -3,7 +3,7 @@
 
 const CircleSection: React.FC = () => {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-linear-to-br from-purple-50 via-white to-white pt-8 sm:pt-10 lg:pt-12">
+    <section className="relative  overflow-hidden bg-linear-to-br from-purple-50 via-white to-white pt-8 sm:pt-10 lg:pt-12">
       {/* Abstract Shape - Bottom Left Angle - Hidden on mobile */}
       <div className="pointer-events-none absolute bottom-0 left-0 hidden h-3/5 w-2/5 lg:block">
         <div
