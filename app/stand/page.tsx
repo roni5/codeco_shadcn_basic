@@ -3,7 +3,8 @@
 
 import CircleSection from "@/components/CircleSection"
 import FourSection from "@/components/Four-Features-Section"
-import Insights from "@/components/insights"
+//import Insights from "@/components/insights"
+import InsightsPurple from "@/components/InsightsPurple"
 import MarketPurple from "@/components/MarketingPurple"
 //import MarketSolutions from "@/components/MarketSolutions"
 
@@ -69,7 +70,7 @@ export default function Stand() {
         ))}
       </section>
       <MarketPurple />
-      <Insights />
+      <InsightsPurple />
       <FourSection />
     </main>
   )
