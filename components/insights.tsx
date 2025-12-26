@@ -103,7 +103,7 @@ const Insights: React.FC = () => {
                         viewBox="0 0 45 45"
                         className="h-8 w-8 text-primary-foreground md:h-9 md:w-9"
                         aria-hidden
-                      >
+                      ><title>checklist icon</title>  
                         <path
                           d="m25 20h-16v2.67h16zm0-5.34h-16v2.67h16zm-16 13.34h10.68v-2.66h-10.68zm26-6 2 2-9.3 9.35-6-6 2-2 4 4z"
                           fill="currentColor"

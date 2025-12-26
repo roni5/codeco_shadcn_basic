@@ -1,6 +1,12 @@
 
 //import type { SVGProps } from 'react'
 
+import CircleSection from "@/components/CircleSection"
+import FourSection from "@/components/Four-Features-Section"
+import Insights from "@/components/insights"
+import MarketPurple from "@/components/MarketingPurple"
+//import MarketSolutions from "@/components/MarketSolutions"
+
 import { PawPrint } from "lucide-react"
 
 
@@ -29,6 +35,7 @@ export default function Stand() {
 
   return (
     <main className="min-h-screen bg-white">
+      <CircleSection />
       <section className="w-full py-24 px-6 max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">
           Our Core Features{' '}
@@ -61,13 +68,9 @@ export default function Stand() {
           </div>
         ))}
       </section>
-      <form>
-      <div className="m-4 p-1 rounded-full max-w-sm hover:bg-linear-to-r focus-within:bg-linear-to-r focus from-rose-400 via-fuchsia-500 to-indigo-500">
-  <label htmlFor="name" className="sr-only">Name</label>
-  <input className="p-3 w-full rounded-full border border-fuchsia-500 focus:outline-none focus:border-transparent hover:border-transparent" type="text" id="name" placeholder="Enter Your Name"/>
-</div>
-  </form>
+      <MarketPurple />
+      <Insights />
+      <FourSection />
     </main>
   )
 }
-//full thing in kimi.com

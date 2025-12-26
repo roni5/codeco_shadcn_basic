@@ -89,6 +89,7 @@ const CircleSection: React.FC = () => {
               viewBox="0 0 24 24"
               fill="#64748b"
             >
+              <title>Globe Icon</title>
               <path d="M12 2a10 10 0 100 20 10 10 0 000-20z" />
             </svg>
           </div>
@@ -98,16 +99,15 @@ const CircleSection: React.FC = () => {
         <div className="space-y-4 text-center sm:space-y-6 lg:w-1/2 lg:pl-16 lg:space-y-8 lg:text-left">
           <button
             type="button"
-            className="rounded-full border border-amber-300 bg-linear-to-r from-rose-500 via-orange-400 to-amber-400 px-4 py-2 text-xs font-medium text-orange-900 transition hover:scale-105 sm:px-5 sm:py-2 sm:text-sm"
+            className="rounded-full border border-purple-300 bg-linear-to-r from-fuchsia-600 to-pink-600 transition hover:scale-105 sm:px-5 sm:py-2 sm:text-sm"
           >
             Pre-Business
           </button>
-
           <h1 className="font-flex text-4xl leading-[0.95] tracking-tight sm:text-6xl md:text-7xl lg:text-8xl xl:text-[120px]">
             <span className="bg-[linear-gradient(to_right,white,#a5b4fc,#c084fc)] bg-clip-text text-transparent [-webkit-text-stroke:1px_#9ca3af]">
               Every Thing
             </span>
-            <span className="block bg-linear-to-r from-rose-500 via-orange-400 to-amber-400 bg-clip-text text-transparent">
+            <span className="block bg-linear-to-r from-fuchsia-500 to-pink-500 bg-clip-text text-transparent">
               Built In
             </span>
           </h1>
@@ -117,7 +117,7 @@ const CircleSection: React.FC = () => {
               type="button"
               className="relative overflow-hidden rounded-2xl px-8 py-3 text-lg font-bold text-white shadow-xl transition hover:scale-105 active:scale-95 sm:px-12 sm:py-4 sm:text-xl lg:px-16 lg:py-5 lg:text-2xl"
             >
-              <span className="absolute inset-0 bg-linear-to-r from-rose-600 via-pink-400 to-orange-400" />
+              <span className="absolute inset-0 bg-linear-to-r focus from-rose-400 via-fuchsia-500 to-indigo-500 transition hover:scale-105 " />
               <span className="relative z-10 tracking-wide">Download</span>
             </button>
           </div>

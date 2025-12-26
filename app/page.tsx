@@ -73,7 +73,7 @@ export default function HomePage() {
 
             {/* Content */}
             <div className="lg:w-1/2">
-              <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12 bg-gradient-to-r from-primary via-foreground to-accent bg-clip-text text-transparent">
+              <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12 bg-linear-to-r from-primary via-foreground to-accent bg-clip-text text-transparent">
                 Get better insights to drive your business.
               </h3>
 
@@ -81,7 +81,7 @@ export default function HomePage() {
                 <li className="relative group">
                   <div className="flex gap-4 md:gap-6 p-6 rounded-2xl hover:bg-muted/10 transition-all duration-300">
                     <div className="shrink-0">
-                      <div className="w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <div className="w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-linear-to-br from-primary to-secondary flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 45 45"
@@ -511,7 +511,7 @@ export default function HomePage() {
                       width="20"
                       height="20"
                       fill="currentColor"
-                    >
+                    ><title>arrow right icon</title>
                       <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
                     </svg>
                   </div>
@@ -524,14 +524,14 @@ export default function HomePage() {
               className="group relative"
             >
               <div
-                className="absolute inset-0 rounded-3xl p-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                className="absolute inset-0 rounded-3xl p-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 style={{
                   backgroundImage:
                     'linear-gradient(var(--border-angle), var(--color-primary), var(--color-secondary), var(--color-accent), var(--color-primary))',
                   backgroundSize: '300% 100%',
                   animation: 'rotate-border 4s linear infinite',
                 }}
-              ></div>
+              />
 
               <div className="relative bg-gradient-to-br from-foreground/90 to-foreground rounded-3xl p-8 md:p-10 border border-foreground/30 group-hover:border-transparent transition-all duration-500 h-full">
                 <div
