@@ -27,15 +27,15 @@ const InsightsPurple: React.FC = () => {
           </div>
 
           {/* ================= RIGHT: CONTENT ================= */}
-          <div className="lg:w-1/2">
+          <div className="lg:w-1/2 ">
             <h3 className="mb-8 text-3xl font-bold md:mb-12 md:text-4xl lg:text-5xl bg-linear-to-r from-fuchsia-500 to-pink-500 bg-clip-text text-transparent">
               Get better insights to drive your business.
             </h3>
 
-            <ul className="space-y-8 md:space-y-10">
+            <ul className="space-y-8 md:space-y-10 border border-purple-100 rounded-3xl p-6 md:p-8 lg:p-12  ">
               {/* Item 1 */}
               <li className="group">
-                <div className="flex gap-4 rounded-2xl p-6 transition-all duration-300 hover:bg-muted/10 md:gap-6">
+                <div className="flex gap-4 rounded-2xl p-6 transition-all duration-300 border-accent hover:bg-muted/10 md:gap-6">
                   <div className="shrink-0">
                     <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-linear-to-br from-rose-400 via-fuchsia-500 to-indigo-500 transition-transform duration-300 group-hover:scale-110 md:h-16 md:w-16">
                       <svg
@@ -52,7 +52,7 @@ const InsightsPurple: React.FC = () => {
                     </div>
                   </div>
 
-                  <div>
+                  <div className=" ">
                     <h4 className="mb-3 text-xl font-bold md:text-2xl">
                       Grow your business with solutions for all of your needs.
                     </h4>

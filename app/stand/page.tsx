@@ -2,7 +2,8 @@
 //import type { SVGProps } from 'react'
 
 import CircleSection from "@/components/CircleSection"
-import FourSection from "@/components/Four-Features-Section"
+//import FourSection from "@/components/Four-Features-Section"
+import FourSectionPurple from "@/components/FourSectionPurple"
 //import Insights from "@/components/insights"
 import InsightsPurple from "@/components/InsightsPurple"
 import MarketPurple from "@/components/MarketingPurple"
@@ -71,7 +72,7 @@ export default function Stand() {
       </section>
       <MarketPurple />
       <InsightsPurple />
-      <FourSection />
+      <FourSectionPurple />
     </main>
   )
 }
